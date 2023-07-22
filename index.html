@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page styling sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome sheet -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- noramlize sheet -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <title>ToDoListo</title>
+</head>
+<body>  
+    <!-- About card -->
+    <div class="about-container">
+        <div class="about-card">
+            <div class="close-btn">X</div>
+            <p><span>ToDoListo</span> Is The Easiest Way To Manage Your Daily Tasks With A Simple Cards System<br>I hope You Enjoy it  :&#41</p>
+            <p><span>Made By:</span> Mohamed Yassine Lhachimi <br><span>Copyright 2023&copy</span></p>
+        </div>
+    </div>
+    <!-- About card -->
+
+    <!-- header -->
+    <header>
+        <h2><a href="#" class="logo">ToDoListo</a></h2>
+        <i class="fa-sharp fa-solid fa-gear settings-icon"></i> 
+        <div class="settings-bar">
+            <i class="fa-solid fa-palette color-theme">
+                <ul class="bars bar-1">
+                    <li data-mainC="#D32F2F" data-backC="#F44336" class="red"></li>
+                    <li data-mainC="#E64A19" data-backC="#FF5722" class="orange"></li>
+                    <li data-mainC="#388E3C" data-backC="#4CAF50" class="green"></li>
+                    <li data-mainC="#0097A7" data-backC="#00BCD4" class="cyan"></li>
+                    <li data-mainC="#C2185B" data-backC="#E91E63" class="pink"></li>
+                    <li data-mainC="#0D0D0D" data-backC="#191919" class="black"></li>
+                </ul>
+            </i>
+            <i class="fa-solid fa-database storage-check">
+                <div class="bars bar-2">
+                    <p>Save Tasks</p>
+                    <div class="check-box">
+                        
+                    </div>
+                </div>
+            </i>
+            <i class="fa-solid fa-circle-info"></i>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- body -->
+    <section class="adding-task-field">
+        <div class="over-size-msg msgs">Only 150 Character Available</div>
+        <div class="empty-field-msg msgs">Input Field Is Empty</div>
+        <div class="repeated-msg msgs">Task Repeated</div>
+        <input type="text" id="task-inpt" placeholder="Type Your Task">
+        <button id="task-btn" class="first-btn">Add</button>
+        <button id="task-btn" class="second-btn">+</button>
+    </section>
+    <section class="tasks-container"></section>
+    <!-- body -->
+    <script src="js/main.js"></script>
+</body>
+</html>

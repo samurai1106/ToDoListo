@@ -1,0 +1,29 @@
+Red: {
+main: #D32F2F
+background: #F44336
+}
+-----------------------
+orange: {
+main: #E64A19
+background: #FF5722
+}
+-----------------------
+green: {
+main: #388E3C
+background: #4CAF50
+}
+-----------------------
+cyan: {
+main: #0097A7
+background: #00BCD4
+}
+-----------------------
+pink: {
+main: #C2185B
+background: #E91E63
+}
+-----------------------
+black: {
+main: #0D0D0D
+background: #191919
+}
