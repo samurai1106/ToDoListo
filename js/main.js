@@ -176,6 +176,19 @@ SetIcon.onmouseleave = function() {
     SetBar.style.opacity = '0';
     SetIcon.style.transform = 'rotate(0deg)';
 }
+
+SetIcon.addEventListener('touchstart', () => {
+    SetBar.style.height = '70px';
+    SetBar.style.visibility = 'visible';
+    SetBar.style.opacity = '1'
+    SetIcon.style.transform = 'rotate(180deg)';
+})
+SetIcon.addEventListener('touchmove', () => {
+    SetBar.style.height = '0';
+    SetBar.style.visibility = 'hidden';
+    SetBar.style.opacity = '0';
+    SetIcon.style.transform = 'rotate(0deg)';
+})
 // Gear icon function
 
 // Gear bar function
@@ -212,6 +225,17 @@ SettingBars[0].onmouseleave = function() {
     SettingBars[0].style.opacity = '0';
 }
 
+SettingIcons[0].addEventListener('touchstart', () => {
+    SettingBars[0].style.width = '105px';
+    SettingBars[0].style.visibility = 'visible';
+    SettingBars[0].style.opacity = '1';;
+})
+
+SettingIcons[0].addEventListener('touchmove', () => {
+    SettingBars[0].style.width = '0';
+    SettingBars[0].style.visibility = 'hidden';
+    SettingBars[0].style.opacity = '0';
+})
 // Check if doea local storage has keys
 if(localStorage.getItem('main-color') || localStorage.getItem('background-color')) {
     // directly set theme color chosen before
@@ -252,6 +276,18 @@ CheckBox.onclick = function() {
         localStorage.setItem('save','no');
     }
 }
+
+SettingIcons[1].addEventListener('touchstart', () => {
+    SettingBars[1].style.width = '105px';
+    SettingBars[1].style.visibility = 'visible';
+    SettingBars[1].style.opacity = '1';
+})
+
+SettingIcons[1].addEventListener('touchmove', () => {
+    SettingBars[1].style.width = '0';
+    SettingBars[1].style.visibility = 'hidden';
+    SettingBars[1].style.opacity = '0';
+})
 // Storage icone function
 
 // About icone function
