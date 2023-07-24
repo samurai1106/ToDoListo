@@ -331,16 +331,13 @@ header .color-theme ul .black{background-color: #191919}
 }
 @media (max-width: 690px) {
     .adding-task-field #task-inpt {width: 350px}
-    .adding-task-field #task-btn {padding: 2px 18px}
 }
 @media (max-width: 550px) {
     header .logo {font-size: 23px}
     .adding-task-field #task-inpt {width: 250px}
-    .adding-task-field #task-btn {padding: 1px 16px}
 }
 @media (max-width: 450px) {
     .about-container .about-card {width: 280px;}
     header .logo {font-size: 21px}
     .adding-task-field #task-inpt {width: 150px}
-    .adding-task-field #task-btn {padding: 1px 16px}
 }
